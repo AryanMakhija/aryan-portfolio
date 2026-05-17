@@ -82,9 +82,9 @@ export default function Hero() {
 
           {/* Summary */}
           <p className="text-neutral-400 text-lg sm:text-xl max-w-2xl leading-relaxed mb-10 font-light">
-            CA Finalist with hands-on experience scaling fintech platforms and healthtech startups. 
+            CA with hands-on experience scaling fintech and healthtech Platforms. 
             From <span className="text-neutral-200">₹80Cr+ revenue impact</span> at Groww to building 
-            real-time revenue assurance systems — I transform financial complexity into strategic clarity.
+            real-time revenue assurance systems - I transform financial complexity into strategic clarity.
           </p>
 
           {/* Meta info */}
@@ -101,7 +101,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 text-neutral-500 text-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>CA Final — District Rank 5th</span>
+              <span>CA Final - District Rank 5th</span>
             </div>
           </div>
 
@@ -132,6 +132,8 @@ export default function Hero() {
             </a>
             <a
   href="/Aryan_Resume.pdf"
+  target="_blank"
+rel="noopener noreferrer"
   download
   className="group inline-flex items-center gap-2 px-6 py-3.5 border border-emerald-500/30 text-emerald-400 rounded-xl font-semibold text-sm hover:bg-emerald-500/10 transition-all"
 >
@@ -140,58 +142,95 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Floating cards */}
-        <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 space-y-4 w-72">
-          <div
-            className="glass rounded-2xl p-4 animate-float"
-            style={{ animationDelay: '0s', animationDuration: '6s' }}
-          >
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                <span className="text-base">📈</span>
-              </div>
-              <div>
-                <p className="text-xs text-neutral-500 font-mono">Revenue Impact</p>
-                <p className="text-white font-semibold">₹80 Cr+</p>
-              </div>
-            </div>
-            <p className="text-xs text-neutral-500">Pricing strategy at Groww</p>
-          </div>
+{/* Floating cards */}
+<div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 space-y-4 w-72">
 
-          <div
-            className="glass rounded-2xl p-4 animate-float"
-            style={{ animationDelay: '2s', animationDuration: '6s' }}
-          >
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
-                <span className="text-base">🎯</span>
-              </div>
-              <div>
-                <p className="text-xs text-neutral-500 font-mono">Market Opportunity</p>
-                <p className="text-white font-semibold">₹160 Cr+</p>
-              </div>
-            </div>
-            <p className="text-xs text-neutral-500">Sized across segments</p>
-          </div>
-
-          <div
-            className="glass rounded-2xl p-4 animate-float"
-            style={{ animationDelay: '4s', animationDuration: '6s' }}
-          >
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
-                <span className="text-base">🛡️</span>
-              </div>
-              <div>
-                <p className="text-xs text-neutral-500 font-mono">Revenue Leakage Plugged</p>
-                <p className="text-white font-semibold">1–2% MoM</p>
-              </div>
-            </div>
-            <p className="text-xs text-neutral-500">At PlatinumRx</p>
-          </div>
-        </div>
+  {/* PlatinumRx */}
+  <div
+    className="glass rounded-2xl p-4 animate-float"
+    style={{ animationDelay: '0s', animationDuration: '6s' }}
+  >
+    <div className="flex items-center gap-3 mb-2">
+      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
+        <span className="text-base">🛡️</span>
       </div>
+      <div>
+        <p className="text-xs text-neutral-500 font-mono">Revenue Leakage Plugged</p>
+        <p className="text-white font-semibold">1–2% MoM</p>
+      </div>
+    </div>
+    <p className="text-xs text-neutral-500">At PlatinumRx</p>
+  </div>
 
+  {/* Revenue Impact */}
+  <div
+    className="glass rounded-2xl p-4 animate-float"
+    style={{ animationDelay: '1s', animationDuration: '6s' }}
+  >
+    <div className="flex items-center gap-3 mb-2">
+      <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+        <span className="text-base">📈</span>
+      </div>
+      <div>
+        <p className="text-xs text-neutral-500 font-mono">Revenue Impact</p>
+        <p className="text-white font-semibold">₹80 Cr+</p>
+      </div>
+    </div>
+    <p className="text-xs text-neutral-500">Pricing strategy at Groww</p>
+  </div>
+
+  {/* Market Opportunity */}
+  <div
+    className="glass rounded-2xl p-4 animate-float"
+    style={{ animationDelay: '2s', animationDuration: '6s' }}
+  >
+    <div className="flex items-center gap-3 mb-2">
+      <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
+        <span className="text-base">🎯</span>
+      </div>
+      <div>
+        <p className="text-xs text-neutral-500 font-mono">Market Opportunity</p>
+        <p className="text-white font-semibold">₹160 Cr+</p>
+      </div>
+    </div>
+    <p className="text-xs text-neutral-500">Sized across segments at Groww</p>
+  </div>
+
+  {/* Working Capital */}
+  <div
+    className="glass rounded-2xl p-4 animate-float"
+    style={{ animationDelay: '3s', animationDuration: '6s' }}
+  >
+    <div className="flex items-center gap-3 mb-2">
+      <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+        <span className="text-base">💰</span>
+      </div>
+      <div>
+        <p className="text-xs text-neutral-500 font-mono">Working Capital Saved</p>
+        <p className="text-white font-semibold">10Cr+</p>
+      </div>
+    </div>
+    <p className="text-xs text-neutral-500">Collections & float optimization at Groww</p>
+  </div>
+
+  {/* Experience */}
+  <div
+    className="glass rounded-2xl p-4 animate-float"
+    style={{ animationDelay: '4s', animationDuration: '6s' }}
+  >
+    <div className="flex items-center gap-3 mb-2">
+      <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
+        <span className="text-base">📊</span>
+      </div>
+      <div>
+        <p className="text-xs text-neutral-500 font-mono">Finance Experience Inc Training- 3 Yrs</p>
+        <p className="text-white font-semibold">4 Years</p>
+      </div>
+    </div>
+    <p className="text-xs text-neutral-500">Across startups & Big6</p>
+  </div>
+  </div>
+</div>
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <ArrowDown size={16} className="text-neutral-600" />

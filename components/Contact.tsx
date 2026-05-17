@@ -17,18 +17,24 @@ export default function Contact() {
     if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
   }, [])
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus('sending')
-    // Simulate — replace with your form service (Formspree, Resend, etc.)
-    await new Promise(r => setTimeout(r, 1500))
-    setStatus('sent')
-    setTimeout(() => {
-      setStatus('idle')
-      setForm({ name: '', email: '', company: '', message: '' })
-    }, 3000)
-  }
+  const text = `
+New Portfolio Inquiry
+
+Name: ${form.name}
+Email: ${form.email}
+Company: ${form.company}
+
+Message:
+${form.message}
+  `
+
+const whatsappURL = `https://wa.me/917011375517?text=${encodeURIComponent(text)}`
+
+  window.open(whatsappURL, '_blank')
+}
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'Aryanmakhija2002@gmail.com', href: 'mailto:Aryanmakhija2002@gmail.com' },
@@ -46,17 +52,24 @@ export default function Contact() {
             <span className="font-mono text-xs text-emerald-500 tracking-widest uppercase">Contact</span>
             <div className="flex-1 h-px bg-emerald-500/20" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-display text-white mb-12">
-            Let's start a <span className="italic text-neutral-400">conversation.</span>
-          </h2>
+<h2 className="text-3xl lg:text-5xl font-display text-white mb-5 leading-tight">
+  Looking for a{" "}
+  <span className="italic text-neutral-400">
+    strategic finance professional?
+  </span>
+</h2>
+
+<p className="text-lg text-neutral-300 leading-relaxed max-w-2xl">
+  Let’s connect and explore how I can contribute across
+  Business Finance, FP&A, Growth Strategy, and Operational Excellence.
+</p>
 
           <div className="grid lg:grid-cols-2 gap-12">
             
             {/* Left — info */}
             <div>
               <p className="text-neutral-400 text-lg leading-relaxed mb-10">
-                Whether you're a recruiter, founder, or finance leader — I'd love to explore how I can contribute to your organization's growth. 
-                I'm actively looking for strategic finance, FP&A, and business finance roles.
+                Whether you're a recruiter, founder, or finance leader - I'd love to explore how I can contribute to your organization's growth. 
               </p>
 
               <div className="space-y-5">
@@ -91,7 +104,7 @@ export default function Contact() {
               <div className="mt-10 p-5 glass rounded-2xl">
                 <p className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-3">Open to roles in</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Strategic Finance', 'Business Finance', 'FP&A', 'Growth Strategy', 'Fintech', 'Investment Analysis'].map((r) => (
+                  {['Business Finance', 'FP&A', 'Growth Strategy & Operation Excellence',].map((r) => (
                     <span key={r} className="skill-chip px-3 py-1.5 rounded-full text-xs">{r}</span>
                   ))}
                 </div>

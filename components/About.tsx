@@ -58,10 +58,10 @@ export default function About() {
 
             <div className="space-y-4 text-neutral-400 leading-relaxed">
               <p>
-                I'm a <span className="text-white font-medium">CA Finalist</span> (District Rank 5th) with a track record of driving measurable business outcomes at the intersection of finance, technology, and strategy.
+                I'm a <span className="text-white font-medium">Chartered Accountant (District Rank 5th)</span>  with a track record of driving measurable business outcomes at the intersection of finance, technology, and strategy.
               </p>
               <p>
-                              At <span className="text-white font-medium">PlatinumRx</span>, I built a 360° live revenue assurance ecosystem from scratch, developed a real-time GM% framework, led legal due diligence for fundraising, and drove cross-functional automation — all in a scaling HealthTech environment.
+                              At <span className="text-white font-medium">PlatinumRx</span>, I built a 360° live revenue assurance ecosystem from scratch, developed a real-time GM% framework, led legal due diligence for fundraising, and drove cross-functional automation - all in a scaling HealthTech environment.
               </p>
               <p>
                 At <span className="text-white font-medium">Groww</span>, I contributed to pricing decisions generating ₹80Cr+ in annual revenue, sized ₹160Cr+ market opportunities, and led AOP planning for one of India's largest investment platforms.
@@ -73,7 +73,7 @@ export default function About() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-2">
-              {['CA Finalist', 'District Rank 5th', 'Fintech', 'HealthTech', 'Startups', 'Big4 Background'].map((tag) => (
+              {['CA- District Rank 5th', 'Fintech', 'HealthTech', 'Startups', 'Big6 Background'].map((tag) => (
                 <span key={tag} className="skill-chip px-3 py-1.5 rounded-full text-xs">{tag}</span>
               ))}
             </div>

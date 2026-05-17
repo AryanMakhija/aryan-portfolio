@@ -646,6 +646,9 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
+.mb-5{
+  margin-bottom: 1.25rem;
+}
 .block{
   display: block;
 }
@@ -1275,6 +1278,9 @@ video {
 .font-mono{
   font-family: var(--font-geist-mono), monospace;
 }
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1306,6 +1312,10 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold{
   font-weight: 700;
@@ -1880,6 +1890,11 @@ body::before {
 
   .lg\:text-7xl{
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 }

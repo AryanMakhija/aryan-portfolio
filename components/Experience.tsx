@@ -83,7 +83,7 @@ const experiences = [
     role: 'Article Assistant — Statutory Audit',
     type: 'Big4 Equivalent — Professional Services',
     period: 'Oct 2022 – Apr 2024',
-    location: 'Delhi',
+    location: 'Gurgaon',
     color: 'orange',
     emoji: '🏛️',
     tagline: 'Awarded SPOT Award and Article of the Quarter',
