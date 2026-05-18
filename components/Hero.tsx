@@ -131,7 +131,7 @@ export default function Hero() {
               <ExternalLink size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <a
-  href="/Aryan_Resume.pdf"
+  href="/Aryan_Resume_Finance.pdf"
   target="_blank"
 rel="noopener noreferrer"
   download
