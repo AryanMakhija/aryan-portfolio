@@ -106,25 +106,32 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <button
               key={link.href}
-              onClick={() => scrollTo(link.href)}
+              onClick={() => {
+  scrollTo(link.href)
+  setMobileOpen(false)
+}}
               className="py-3 px-4 text-left text-neutral-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all"
             >
               {link.label}
             </button>
           ))}
           <div className="mt-4 pt-4 border-t border-white/[0.06] flex gap-3">
-            <a
-              href="mailto:Aryanmakhija2002@gmail.com"
-              className="flex-1 py-2.5 text-center text-sm font-medium text-emerald-400 border border-emerald-500/25 rounded-lg"
-            >
+<a
+  href="mailto:Aryanmakhija2002@gmail.com"
+  onClick={() => setMobileOpen(false)}
+  className="flex-1 py-2.5 text-center text-sm font-medium text-emerald-400 border border-emerald-500/25 rounded-lg"
+>
               Hire Me
             </a>
-            <a
-              href="#"
-              className="flex-1 py-2.5 text-center text-sm font-medium text-[#080808] bg-emerald-400 rounded-lg"
-            >
-              Resume ↓
-            </a>
+<a
+  href="/Aryan_Resume_Finance.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setMobileOpen(false)}
+  className="flex-1 py-2.5 text-center text-sm font-medium text-[#080808] bg-emerald-400 rounded-lg"
+>
+  Resume ↓
+</a>
           </div>
         </div>
       </div>
