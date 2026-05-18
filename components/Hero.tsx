@@ -134,7 +134,6 @@ export default function Hero() {
   href="/Aryan_Resume_Finance.pdf"
   target="_blank"
 rel="noopener noreferrer"
-  download
   className="group inline-flex items-center gap-2 px-6 py-3.5 border border-emerald-500/30 text-emerald-400 rounded-xl font-semibold text-sm hover:bg-emerald-500/10 transition-all"
 >
   Download CV
