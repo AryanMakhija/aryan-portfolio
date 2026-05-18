@@ -95,11 +95,13 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile menu */}
-      <div
-        className={`fixed inset-x-0 top-0 z-30 pt-20 pb-8 px-6 bg-[#080808]/98 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300 ${
-          mobileOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-        }`}
-      >
+<div
+  className={`fixed inset-x-0 top-0 z-30 pt-20 pb-8 px-6 bg-[#080808]/98 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300 ${
+    mobileOpen
+      ? 'translate-y-0 opacity-100 pointer-events-auto'
+      : '-translate-y-full opacity-0 pointer-events-none'
+  }`}
+>
         <div className="flex flex-col gap-1">
           {navLinks.map((link) => (
             <button
