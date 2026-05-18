@@ -38,7 +38,7 @@ const whatsappURL = `https://wa.me/917011375517?text=${encodeURIComponent(text)}
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'Aryanmakhija2002@gmail.com', href: 'mailto:Aryanmakhija2002@gmail.com' },
-    { icon: Linkedin, label: 'LinkedIn', value: 'Connect on LinkedIn', href: 'https://linkedin.com' },
+    { icon: Linkedin, label: 'LinkedIn', value: 'Connect on LinkedIn', href: 'https://www.linkedin.com/in/ca-aryan-makhija-b22693241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlnPP5B2MQQuLEXU94I6oRA%3D%3D' },
     { icon: MapPin, label: 'Location', value: 'Bangalore, India', href: null },
   ]
 
