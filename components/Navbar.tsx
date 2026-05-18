@@ -75,10 +75,9 @@ export default function Navbar() {
               Hire Me
             </a>
   <a
-  href="/Aryan_Resume.pdf"
+  href="/Aryan_Resume_Finance.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  download
   className="px-4 py-2 text-sm font-medium text-[#080808] bg-emerald-400 rounded-lg hover:bg-emerald-300 transition-all btn-shimmer"
 >
   Resume ↓
