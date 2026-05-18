@@ -30,7 +30,7 @@ export default function Footer() {
               <Mail size={15} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ca-aryan-makhija-b22693241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlnPP5B2MQQuLEXU94I6oRA%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-lg border border-white/[0.06] flex items-center justify-center text-neutral-500 hover:text-emerald-400 hover:border-emerald-500/25 transition-all"
